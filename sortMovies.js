@@ -20,5 +20,5 @@ movieArray.push(new Movie(1, "Best Movie Ever", "2019", "4.5"));
 movieArray.push(new Movie(8, "(600) Days Of Summer", "2019", "4.5"));
 movieArray.push(new Movie(3, "The LEGO Github Movie", "2022", "7.9"));
 
-// Sort movies ascending by movieID
+// Q4.3: Sort movies ascending by movieID
 const sortedMovies = movieArray.sort(function(a, b){return a.movieID - b.movieID});
