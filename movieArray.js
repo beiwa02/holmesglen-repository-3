@@ -138,6 +138,20 @@ class MovieList {
       }
     }
   }
+
+  // Search by ID
+  searchID(query) {
+    let searchResults = [];
+    // Compare
+    for (let movie of this.movieList) {
+      if(movie.movieID == query) {
+        searchResults.push(movie);
+      }
+    }
+    // Display
+    this.removeElements();
+    this.genSearchList(searchResults);
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
