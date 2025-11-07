@@ -28,6 +28,7 @@ class MovieList {
   constructor(rootID, movieArray) {
     this.rootID = rootID; // HTML ID of the list destination
     this.movieList = movieArray;
+    this.refresh();
   }
 
   // Methods
@@ -83,6 +84,12 @@ class MovieList {
       const child = childNodes[i];
       rootElement.removeChild(child);
     }
+  }
+
+  // Clear the DOM of movies, then show the requested movies
+  refresh() {
+    this.removeElements();
+    this.genMovieList();
   }
 }
 
