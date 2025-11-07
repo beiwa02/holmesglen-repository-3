@@ -21,3 +21,12 @@ let movieArray = [
   (new Movie(9, "The Woman from A.U.N.T.", "2016", "8.8")),
   (new Movie(10, "Hostile Hospital", "2002", "0.0")),
 ];
+
+//////////////////////////////////////////////////////////////////////////
+
+class MovieList {
+  constructor(rootID, movieArray) {
+    this.rootID = rootID; // HTML ID of the list destination
+    this.movieList = movieArray;
+  }
+}
