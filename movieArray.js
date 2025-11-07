@@ -188,6 +188,13 @@ class MovieList {
     // Refresh to show
     this.refresh();
   }
+
+
+  // Misc
+  // Clear form inputs
+  resetInput(id) {
+    document.getElementById(id).value = "";
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
