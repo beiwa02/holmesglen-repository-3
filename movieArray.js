@@ -130,3 +130,27 @@ class MovieList {
 //////////////////////////////////////////////////////////////////////////
 
 let movieList = new MovieList('list', movieArray);
+
+//////////////////////////////////////////////////////////////////////////
+// Click functions
+// Sorting
+// Sort A-Z
+function a2zClick() {
+  movieList.sortA2Z();
+}
+
+// Sort Z-A
+function z2aClick() {
+  movieList.sortZ2A();
+}
+
+// Sort rating (descending)
+function ratingClick() {
+  movieList.sortRating();
+}
+
+// Show all movies, ordered by ID (ascending)
+function refreshClick() {
+  movieList.refresh();
+  movieList.sortID();
+}
