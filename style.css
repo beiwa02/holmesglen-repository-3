@@ -60,6 +60,11 @@ h2, p {
   flex-direction: row;
 }
 
+.row div, #label-row div {
+  padding: 10px;
+  border: 1px var(--primary) solid;
+}
+
 #label-row {
   color: var(--tertiary);
   background-color: var(--primary);
