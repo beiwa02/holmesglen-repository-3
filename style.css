@@ -86,3 +86,17 @@ hr {
   margin: 1em 0;
   border: none;
 }
+
+/* Buttons */
+button {
+  background-color: var(--tertiary);
+  padding: 0.2em;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 2px;
+}
+
+form button {
+  width: 50%;
+  margin-top: 5px;
+}
