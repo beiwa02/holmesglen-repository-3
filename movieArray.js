@@ -91,6 +91,22 @@ class MovieList {
     this.removeElements();
     this.genMovieList();
   }
+
+
+  // Sorting
+  // Sort title ascending
+  sortA2Z() {
+    this.movieList.sort(function (a, b) {
+      return a.movieTitle.localeCompare(b.movieTitle);
+    });
+    this.refresh();
+  }
+
+  // Sort title descending
+
+  // Sort rating descending
+
+  // Sort ID descending
 }
 
 //////////////////////////////////////////////////////////////////////////
