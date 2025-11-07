@@ -69,3 +69,16 @@ h1 {
   padding-top: 0.5em;
   border-radius: 5px;
 }
+
+.sidebar-sec {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+hr {
+  background-color: var(--primary);
+  height: 2px;
+  margin: 1em 0;
+  border: none;
+}
