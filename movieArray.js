@@ -119,6 +119,12 @@ class MovieList {
   }
 
   // Sort ID descending
+  sortID() {
+    this.movieList.sort(function (a, b) {
+      return (a.movieID - b.movieID);
+    });
+    this.refresh();
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
