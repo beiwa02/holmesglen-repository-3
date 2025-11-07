@@ -230,16 +230,22 @@ function refreshClick() {
 function searchIDClick() {
   let query = document.getElementById("search-ID").value;
   movieList.searchID(query);
+  movieList.resetInput("search-ID");
 }
 
 // Search movies by title
 function searchTitleClick() {
   let query = document.getElementById("search-title").value;
   movieList.searchTitle(query);
+  movieList.resetInput("search-title");
 }
 
 // Adding
 // Add movie to array
 function addMovieClick() {
   movieList.addMovie();
+  movieList.resetInput("add-ID");
+  movieList.resetInput("add-title");
+  movieList.resetInput("add-year");
+  movieList.resetInput("add-rating");
 }
