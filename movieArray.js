@@ -125,6 +125,19 @@ class MovieList {
     });
     this.refresh();
   }
+
+
+  // Searching
+  // Search results
+  genSearchList(array) {
+    if (array.length == 0) {
+      this.movieRow("", "0 results", "", "");
+    } else {
+      for (let movie of array) {
+      this.movieRow(movie.movieID, movie.movieTitle, movie.movieYear, movie.movieRating);
+      }
+    }
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
