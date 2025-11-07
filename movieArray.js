@@ -29,4 +29,31 @@ class MovieList {
     this.rootID = rootID; // HTML ID of the list destination
     this.movieList = movieArray;
   }
+
+  // Methods
+  movieRow(index, title, year, rating) {
+    const rootElement = document.getElementById(this.rootID); // Parent element
+
+    // Create elements for DOM
+    const row = document.createElement('div');
+    const idDiv = document.createElement('div');
+    const titleDiv = document.createElement('div');
+    const yearDiv = document.createElement('div');
+    const ratingDiv = document.createElement('div');
+
+    // Add content to elements
+    idDiv.textContent = index;
+    titleDiv.textContent = title;
+    yearDiv.textContent = year;
+    ratingDiv.textContent = rating;
+
+    // Add elements to DOM
+    // Append elements to row
+    row.appendChild(idDiv);
+    row.appendChild(titleDiv);
+    row.appendChild(yearDiv);
+    row.appendChild(ratingDiv);
+    // Append row to DOM
+    rootElement.appendChild(row);
+  }
 }
