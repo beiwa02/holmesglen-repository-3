@@ -230,3 +230,9 @@ function searchTitleClick() {
   let query = document.getElementById("search-title").value;
   movieList.searchTitle(query);
 }
+
+// Adding
+// Add movie to array
+function addMovieClick() {
+  movieList.addMovie();
+}
