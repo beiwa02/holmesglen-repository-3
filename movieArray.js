@@ -111,6 +111,12 @@ class MovieList {
   }
 
   // Sort rating descending
+  sortRating() {
+    this.movieList.sort(function (a, b) {
+      return b.movieRating.localeCompare(a.movieRating);
+    });
+    this.refresh();
+  }
 
   // Sort ID descending
 }
