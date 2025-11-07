@@ -114,6 +114,16 @@ hr {
   border: none;
 }
 
+/* Form labels */
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div label {
+  margin-top: 5px;
+}
+
 /* Buttons */
 button {
   background-color: var(--tertiary);
