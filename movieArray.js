@@ -71,6 +71,19 @@ class MovieList {
       this.movieRow(movie.movieID, movie.movieTitle, movie.movieYear, movie.movieRating);
     }
   }
+
+  // Remove elements
+  removeElements() {
+    const rootElement = document.getElementById(this.rootID); // Parent element
+    const childNodes = document.getElementsByClassName('row'); // Array of elements
+    const len = childNodes.length - 1;
+
+    // Loop through, removing all children
+    for (let i = len; i >= 0; i--) {
+      const child = childNodes[i];
+      rootElement.removeChild(child);
+    }
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
