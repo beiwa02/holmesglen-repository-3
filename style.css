@@ -63,6 +63,10 @@ h1 {
 }
 
 /* Sidebar */
+h3 {
+  font-size: 1.5em;
+}
+
 #sidebar {
   background-color: var(--secondary);
   width: 20dvw;
