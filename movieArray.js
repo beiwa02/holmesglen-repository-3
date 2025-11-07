@@ -56,4 +56,16 @@ class MovieList {
     // Append row to DOM
     rootElement.appendChild(row);
   }
+
+  // Generate all rows
+  genMovieList() {
+    for (let i = 0; i < this.movieList.length; i++) {
+      let movie = this.movieList[i];
+      this.movieRow(movie.movieID, movie.movieTitle, movie.movieYear, movie.movieRating);
+    }
+  }
 }
+
+//////////////////////////////////////////////////////////////////////////
+
+let movieList = new MovieList('list', movieArray);
