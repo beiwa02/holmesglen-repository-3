@@ -61,3 +61,11 @@ h1 {
 .titleDiv {
   width: 70%;
 }
+
+/* Sidebar */
+#sidebar {
+  background-color: var(--secondary);
+  width: 20dvw;
+  padding-top: 0.5em;
+  border-radius: 5px;
+}
