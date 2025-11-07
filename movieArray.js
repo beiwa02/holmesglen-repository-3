@@ -55,6 +55,13 @@ class MovieList {
     row.appendChild(ratingDiv);
     // Append row to DOM
     rootElement.appendChild(row);
+
+    // Add classes to divs
+    row.classList.add('row');
+    idDiv.classList.add("idDiv");
+    titleDiv.classList.add("titleDiv");
+    yearDiv.classList.add("yearDiv");
+    ratingDiv.classList.add("ratingDiv");
   }
 
   // Generate all rows
