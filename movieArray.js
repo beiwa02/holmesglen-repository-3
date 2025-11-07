@@ -103,6 +103,12 @@ class MovieList {
   }
 
   // Sort title descending
+  sortZ2A() {
+    this.movieList.sort(function (a, b) {
+      return b.movieTitle.localeCompare(a.movieTitle);
+    });
+    this.refresh();
+  }
 
   // Sort rating descending
 
