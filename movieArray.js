@@ -174,6 +174,20 @@ class MovieList {
     this.removeElements();
     this.genSearchList(searchResults);
   }
+
+
+  // Add new movie
+  addMovie() {
+    // Collect all values from the DOM
+    const addID = document.getElementById("add-ID").value;
+    const addTitle = document.getElementById("add-title").value;
+    const addYear = document.getElementById("add-year").value;
+    const addRating = document.getElementById("add-rating").value;
+    // Add to the array
+    this.movieList.push({movieID: addID, movieTitle: addTitle, movieYear: addYear, movieRating: addRating});
+    // Refresh to show
+    this.refresh();
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
