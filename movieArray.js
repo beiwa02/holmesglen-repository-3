@@ -203,3 +203,16 @@ function refreshClick() {
   movieList.refresh();
   movieList.sortID();
 }
+
+// Searching
+// Search movies by ID
+function searchIDClick() {
+  let query = document.getElementById("search-ID").value;
+  movieList.searchID(query);
+}
+
+// Search movies by title
+function searchTitleClick() {
+  let query = document.getElementById("search-title").value;
+  movieList.searchTitle(query);
+}
