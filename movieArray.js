@@ -152,6 +152,28 @@ class MovieList {
     this.removeElements();
     this.genSearchList(searchResults);
   }
+
+  // Search by title
+  searchTitle(query) {
+    let searchResults = [];
+
+    for (let movie of this.movieList) {
+      // Make searching case insensitive
+      let lowerMovieTitle = (movie.movieTitle).toLowerCase();
+      let lowerQuery = query.toLowerCase();
+      // Compare
+      if(lowerMovieTitle.includes(lowerQuery)) {
+        searchResults.push(movie);
+      }
+    }
+    // Empty searchResults if the query is empty
+    if (query == "") {
+      searchResults = [];
+    }
+    // Display
+    this.removeElements();
+    this.genSearchList(searchResults);
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////
