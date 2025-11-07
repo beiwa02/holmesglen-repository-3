@@ -34,6 +34,17 @@ h1 {
 }
 
 /* Movie list */
+#movie-list {
+  padding: 1em;
+  margin: 0 auto;
+}
+
+#list {
+  background-color: var(--secondary);
+  padding: 1em;
+  border-radius: 5px;
+}
+
 .row, #label-row {
   width: 60dvw;
   margin: auto;
