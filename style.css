@@ -60,6 +60,16 @@ h2, p {
   flex-direction: row;
 }
 
+#label-row {
+  color: var(--tertiary);
+  background-color: var(--primary);
+}
+
+.row {
+  color: var(--primary);
+  background-color: var(--tertiary);
+}
+
 /* Movie array columns */
 .idDiv, .yearDiv, .ratingDiv {
   width: 10%;
