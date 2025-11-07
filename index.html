@@ -20,7 +20,7 @@
       <!-- Sort -->
       <div class="sidebar-sec" id="sort">
         <h3>Sort</h3>
-        
+
         <!-- Sorting buttons -->
          <div class="flex-col" id="sort-buttons">
           <button type="button" name="sortA2Z" onclick="">Title (ascending)</button>
@@ -34,6 +34,32 @@
       <!-- Search -->
       <div class="sidebar-sec" id="search">
         <h3>Search</h3>
+
+        <!-- Search forms -->
+        <div id="search-movie">
+
+          <!-- Search by ID -->
+          <form id="search-form-ID">
+            <!-- Input -->
+            <div class="form-div">
+              <label for="search-ID"><h4>Search by ID</h4></label>
+              <input type="text" placeholder="ID" name="ID" id="search-ID">
+            </div>
+            <!-- Submit -->
+            <button type="button" name="submit" onclick="">Search</button>
+          </form>
+
+          <!-- Search by title -->
+          <form id="search-form-title">
+            <!-- Input -->
+            <div class="form-div">
+              <label for="search-title"><h4>Search by title</h4></label>
+              <input type="text" placeholder="Title" name="title" id="search-title">
+            </div>
+            <!-- Submit -->
+            <button type="button" name="submit" onclick="">Search</button>
+          </form>
+        </div>
         <hr>
       </div>
 
