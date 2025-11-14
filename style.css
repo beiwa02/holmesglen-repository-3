@@ -145,3 +145,7 @@ form button {
   width: 50%;
   margin-top: 5px;
 }
+
+button:hover {
+  cursor: pointer;
+}
