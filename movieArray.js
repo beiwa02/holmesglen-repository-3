@@ -7,8 +7,8 @@ class Movie {
     this.movieRating = movieRating;
   }
 }
-
-console.log(Movie);
+const movie1 = new Movie(0, "Movie 1", "2000", "5");
+console.log(movie1);
 
 // Q4.2: Array of 10 movies
 let movieArray = [];
@@ -24,4 +24,4 @@ movieArray.push(new Movie(1, "Best Movie Ever", "2019", "4.5"));
 movieArray.push(new Movie(8, "(600) Days Of Summer", "2019", "4.5"));
 movieArray.push(new Movie(3, "The LEGO Github Movie", "2022", "7.9"));
 
-console.log(movieArray);
+//console.log(movieArray);
